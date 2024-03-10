@@ -53,7 +53,6 @@ function alteraEstilo(event) {
     let corSpan = document.getElementsByClassName('alteraEstilo');
     let corBtn = document.getElementsByClassName('alteraBgBtn')
 
-    console.log(corSpan)
     for (let i = 0; i < corSpan.length; i++) {
         const corTxt = corSpan[i];
     
