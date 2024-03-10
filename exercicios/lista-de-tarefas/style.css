@@ -1,0 +1,80 @@
+body {
+    max-width: 1000px;
+}
+button {
+    background: transparent;
+    border: 0 solid transparent;
+    cursor: pointer;
+}
+#divInput{
+    position: relative;
+    p{
+        position: absolute;
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    &.erro{
+        & p {
+            opacity: 1;
+            color: red;
+        }
+        & input{
+            border: 2px solid red;
+            background-color: #ffdddd;
+        }
+    }
+}
+.itemLista {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--btn_acao);
+    margin-top: 10px;
+    & div button:first-child {
+        margin-right: 20px;
+    }
+}
+.tarefa {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.txtInput {
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 25px;
+    color: var(--btn_acao);
+
+}
+.btn {
+    text-decoration: none;
+    color: var(--txt_botao);
+    background-color: var(--btn_acao);
+    display: block;
+    
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    border: 0 solid transparent;
+}
+.btn:hover {
+    color: var(--txt_principal);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+.completa {
+    text-decoration: line-through;
+    color: #86868666;
+}
